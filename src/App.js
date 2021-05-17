@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "./components/Header";
-import ResultsTable from "./components/ResultsTable"; 
-import SearchForm from "./components/SearchForm"; 
+import Table from "./components/Table"
 import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <SearchForm />
+  
+      <Table />
     </div>
-  )
+  );
 }
 
 export default App;

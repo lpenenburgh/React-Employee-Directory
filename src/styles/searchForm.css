@@ -2,9 +2,11 @@
     padding-top: 15px;
     padding-left: 40%;
     padding-right: 40%;
+    padding-bottom: 25px;
     text-align: center;
 }
 
 ::placeholder {
     text-align: center;  
 }
+
