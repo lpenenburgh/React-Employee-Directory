@@ -8,7 +8,7 @@ https://lpenenburgh.github.io/React-Employee-Directory/
 A React application that allows the user to view general information on other employees, including their name, phone number, email, and photo. To help the user easily find a specific employee, this app allows the user to search and sort employees based on the first or last name.
 
 
-<img src="https://i.imgur.com/DDs5q8f.png" width="500">
+<img src="https://i.imgur.com/3KMF0PJ.png" width="500">
  
 
 
