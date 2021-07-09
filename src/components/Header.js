@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/directoryLogo.png"
 import "../styles/header.css"
 
 function Header() {
@@ -6,8 +7,8 @@ function Header() {
         <div>
             <div className="jumbotron jumbotron-fluid" id="header">
                 <div className="container">
-                    <h1 className="display-4">Employee Directory</h1>
-                    <p className="lead">Click on the carrots to filter by heading or use the search box to narrow your results</p>
+                    <img src={logo} id="logo" alt="employee directory" />
+                    <p className="lead">Click on the arrows to filter by heading or use the search box to narrow your results</p>
                 </div>
             </div>
         </div>

@@ -1,3 +1,12 @@
 th {
-    color:purple;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;   
+  }
+
+  thead {
+    background-color: #cc6331;
+  }
+
+.userThumb {
+    border-radius: 50%;
   }

@@ -10,3 +10,11 @@
     text-align: center;  
 }
 
+form {
+    padding-top: 20px;
+}
+
+.form-control {
+    border-color:rgb(15, 94, 115);
+    border-width: 3px;
+}

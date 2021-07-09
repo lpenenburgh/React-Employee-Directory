@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import API from "../utils/API.js";
 import SearchForm from "./SearchForm";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import "../styles/table.css"
 
-
+const element = <FontAwesomeIcon icon={faCaretDown } />
 
 class Table extends Component {
   state = {
@@ -84,8 +86,8 @@ render() {
           <thead>
             <tr>
               <th>Image</th>
-              <th>First Name  <button  onClick={this.sortFirstName}>^</button></th>
-              <th>Last Name <button  onClick={this.sortLastName}>^</button></th>
+              <th>First Name  <button  onClick={this.sortFirstName}>{element}</button></th>
+              <th>Last Name <button  onClick={this.sortLastName}>{element}</button></th>
               <th>Phone</th>
               <th>Email</th>
             </tr>
@@ -96,7 +98,7 @@ render() {
               item.name.first.toLowerCase().includes(this.state.search) ?
                 <tbody key={item.login.uuid}>
                   <tr>
-                    <td ><img src={item.picture.thumbnail}  alt="user thumbnail"/></td>
+                    <td ><img src={item.picture.thumbnail} className="userThumb"  alt="user thumbnail"/></td>
                     <td >{item.name.first}</td>
                     <td >{item.name.last}</td>
                     <td >{item.phone}</td>
@@ -109,7 +111,7 @@ render() {
                 item.name.last.toLowerCase().includes(this.state.search) ?
                   <tbody key={item.login.uuid}>
                     <tr>
-                    <td ><img src={item.picture.thumbnail}  alt="user thumbnail" /></td>
+                    <td ><img src={item.picture.thumbnail} className="userThumb"  alt="user thumbnail" /></td>
                       <td >{item.name.first}</td>
                       <td >{item.name.last}</td>
                       <td >{item.phone} </td>
